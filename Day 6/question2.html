@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LetsUpgrade</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        width: 80%;
+        margin: auto;
+        background-color: #f5f5f5;
+      }
+      thead,
+      tfoot {
+        background-color: #efefef;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      button {
+        cursor: pointer;
+        height: 28px;
+        padding: 4px;
+      }
+      .searchtext {
+        display: block;
+        width: 245px;
+        margin: 40px auto 25px;
+      }
+      input {
+        height: 24px;
+        padding: 0 10px;
+      }
+      form {
+        width: 1048px;
+        margin: 50px auto 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="form">
+      <input placeholder="name" type="text" name="name" id="name" />
+      <input placeholder="source" type="text" name="source" id="source" />
+      <input
+        placeholder="destination"
+        type="text"
+        name="destination"
+        id="destination"
+      />
+      <input placeholder="number" type="text" name="number" id="number" />
+      <input placeholder="capacity" type="text" name="capacity" id="capacity" />
+      <button type="submit" id="addBus">Add Bus</button>
+    </form>
+
+    <div class="searchtext">
+      <span>Search:</span>
+      <input
+        type="text"
+        class="search"
+        placeholder="Search with Source or Destination"
+      />
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>Name</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Number</th>
+          <th>Passenger Capacity</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <th>S.NO</th>
+          <th>Name</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Number</th>
+          <th>Passenger Capacity</th>
+        </tr>
+      </tfoot>
+    </table>
+    <script src="question2.js"></script>
+  </body>
+</html>
